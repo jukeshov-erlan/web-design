@@ -1,0 +1,22 @@
+@use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
+body {
+  font-family: $main-font;
+  background-color: $background-color;
+}
+
+header {
+  .logo {}
+
+  &__nav {
+  }
+
+  &__link {}
+}
+
+p {
+  color: $color1;
+}
