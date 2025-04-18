@@ -1,19 +1,18 @@
-@use 'variables' as *;
-@use 'functions' as *;
-@use 'globals' as *;
-
+@use "variables" as *;
+@use "functions" as *;
+@use "globals" as *;
 
 .header {
   background-color: $header-background;
   padding-block: rem(20);
 
-
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-inline: auto;
   }
-  
+
   .logo {
     display: flex;
     align-items: center;
@@ -30,7 +29,5 @@
   &__link {
     font-weight: 700;
     font-size: rem(18);
-    color: $link-color;
   }
 }
-

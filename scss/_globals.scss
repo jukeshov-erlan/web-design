@@ -1,6 +1,40 @@
-@use 'functions' as *;
+@use "functions" as *;
+@use "variables" as *;
 
 .container {
   max-width: rem(1250);
-  margin-inline: rem(96);
+  margin-inline: auto;
+  padding-inline: rem(96);
+}
+
+a {
+  color: $header-link-color;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: rem(16) rem(48);
+
+  font-size: rem(18);
+  background-color: #9d9d9d;
+  border-radius: rem(4);
+  gap: rem(16);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/mail.svg");
+    width: rem(21);
+    height: rem(16);
+    color: #fff;
+  }
 }
