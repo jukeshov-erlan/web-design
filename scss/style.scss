@@ -2,23 +2,9 @@
 @use "functions" as *;
 @use "header" as *;
 @use "main" as *;
+@use "works" as *;
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-body {
-  font-family: $main-font;
-  color: $main-color;
-
-  font-weight: 600;
-  font-size: rem(26);
-  line-height: rem(30);
-  letter-spacing: rem(-0.5);
-
-  background-color: $background-color;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: $header-link-color;
-  text-decoration: none;
-}
+// .welcome {
+//   display: none;
+// }
