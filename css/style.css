@@ -48,6 +48,12 @@ img {
   color: #fff;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #dedede;
+}
+
 .header {
   background-color: #323232;
   padding-block: 1.25rem;
@@ -128,14 +134,15 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5625rem;
+  padding-top: 6.25rem;
 }
 
 .work {
   height: 31.25rem;
   position: relative;
 }
-.work:nth-child(2n) {
-  top: 6.25rem;
+.work:nth-child(odd) {
+  margin-top: -6.25rem;
 }
 .work:hover {
   opacity: 1;
@@ -163,6 +170,59 @@ img {
 }
 .work:hover .work__name {
   opacity: 1;
+}
+
+.explorations {
+  text-align: center;
+}
+.explorations__title {
+  margin: 15rem auto 4.0625rem;
+}
+.explorations__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.explorations__img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.projects {
+  text-align: center;
+}
+.projects__title {
+  margin-top: 15rem;
+  margin-bottom: 4.125rem;
+}
+.projects__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.projects__img {
+  width: 25rem;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.contact-me {
+  margin-top: 15rem;
+}
+.contact-me .container {
+  text-align: center;
+}
+.contact-me__title {
+  margin-bottom: 1.5rem;
+}
+.contact-me__desc {
+  width: 32.5rem;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  line-height: 2.375rem;
 }
 
 /*# sourceMappingURL=style.css.map */

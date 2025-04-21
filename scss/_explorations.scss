@@ -1,0 +1,23 @@
+@use "variables" as *;
+@use "functions" as *;
+
+.explorations {
+  text-align: center;
+
+  &__title {
+    margin: rem(240) auto rem(65);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(24);
+  }
+
+  &__img {
+    width: rem(400);
+    height: rem(400);
+    border-radius: rem(4);
+    object-fit: cover;
+  }
+}

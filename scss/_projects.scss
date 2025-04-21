@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "functions" as *;
+
+
+.projects {
+  text-align: center;
+
+  &__title {
+    margin-top: rem(240);
+    margin-bottom: rem(66);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(24);
+  }
+  
+  &__img {
+    width: rem(400);
+    height: rem(560);
+    object-fit: cover;
+    border-radius: rem(4);
+  }
+}
