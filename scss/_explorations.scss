@@ -1,17 +1,17 @@
 @use "variables" as *;
 @use "functions" as *;
+@use "mixins" as *;
 
 .explorations {
+  margin-top: rem(240);
   text-align: center;
 
-  &__title {
-    margin: rem(240) auto rem(65);
-  }
-
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: rem(24);
+    margin-top: rem(65);
   }
 
   &__img {
@@ -19,5 +19,17 @@
     height: rem(400);
     border-radius: rem(4);
     object-fit: cover;
+    object-position: center;
+  }
+
+  @include respond(tablet) {
+    &__wrapper {
+      gap: rem(16);
+    }
+
+    &__img {
+      width: rem(350);
+      height: rem(350);
+    }
   }
 }

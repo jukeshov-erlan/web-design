@@ -1,0 +1,44 @@
+@use "functions" as *;
+@use "variables" as *;
+@use "mixins" as *;
+
+
+.footer {
+  border-top: 1px solid #696969;
+  margin-top: rem(175);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-size: rem(16);
+    line-height: rem(36);
+  }
+
+  &__name {
+    color: $name-color;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: rem(24);
+}
+
+@include respond(mobile) {
+  .footer {
+    margin-top: rem(100);
+
+    .container {
+      flex-direction: column-reverse;
+      gap: rem(35);
+    }
+  }
+
+  .socials {
+    margin-top: rem(48);
+  }
+}

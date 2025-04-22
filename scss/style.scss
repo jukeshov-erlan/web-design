@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 @use "functions" as *;
 @use "header" as *;
 @use "main" as *;
@@ -6,10 +7,14 @@
 @use "explorations" as *;
 @use "projects" as *;
 @use "contact-me" as *;
-
+@use "footer" as *;
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-// .welcome {
-//   display: none;
-// }
+@media(max-width: rem(1100)) {
+  .explorations,
+  .projects,
+  .contact-me {
+    margin-top: rem(100);
+  }
+}

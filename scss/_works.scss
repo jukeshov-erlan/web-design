@@ -1,5 +1,7 @@
 @use "functions" as *;
 @use "variables" as *;
+@use "mixins" as *;
+
 
 .works {
   margin-top: rem(143);
@@ -32,7 +34,7 @@
 }
 
 .work {
-  height: rem(500);
+  height: rem(600);
   position: relative;
 
   &:nth-child(odd) {
@@ -74,3 +76,25 @@
     opacity: 1;
   }
 }
+
+@include respond(tablet) {
+  .work {
+    width: rem(300);
+    height: rem(300);
+  }
+}
+
+@include respond(mobile) {
+  .works {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .work {
+    width: rem(366);
+    height: rem(600);
+  }
+
+}
+

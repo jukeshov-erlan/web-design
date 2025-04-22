@@ -3,17 +3,14 @@
 
 .contact-me {
   margin-top: rem(240);
-  
+
   .container {
+    max-width: rem(520);
     text-align: center;
   }
-
-  &__title {
-    margin-bottom: rem(24);
-  }
-
+  
   &__desc {
-    width: rem(520);
+    margin-top: rem(24);
     margin-inline: auto;
     margin-bottom: rem(48);
     line-height: rem(38);

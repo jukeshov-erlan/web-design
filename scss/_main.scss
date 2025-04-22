@@ -1,9 +1,11 @@
 @use "functions" as *;
 @use "variables" as *;
+@use "mixins" as *;
 
 .main {
-  margin-top: rem(129);
   .welcome {
+    margin-top: rem(129);
+
     .container {
       display: flex;
       justify-content: space-between;
@@ -35,6 +37,41 @@
       height: rem(400);
       border-radius: 50%;
       margin-right: rem(106);
+    }
+
+    @include respond(tablet) {
+      .welcome {
+        margin-top: rem(70);
+      }
+
+      .container {
+        flex-direction: column-reverse;
+        gap: rem(65);
+        align-items: center;
+      }
+
+      &__desc {
+        text-align: center;
+      }
+
+      &__title {
+        width: auto;
+      }
+
+      &__text {
+        width: auto;
+        margin-bottom: rem(50);
+      }
+
+      &__img {
+        margin-right: 0;
+      }
+    }
+
+    @include respond(mobile) {
+      &__title {
+        font-size: rem(36);
+      }
     }
   }
 }
